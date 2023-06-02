@@ -442,6 +442,98 @@ par} % entry value
 
 \end_deeper
 \begin_layout LyX-Code
+% skills 
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+newcommand{
+\backslash
+skill}[2]{ 
+\end_layout
+
+\begin_layout LyX-Code
+% set specific indentation for personal information 
+\backslash
+noindent
+\backslash
+hangindent=2em
+\backslash
+hangafter=0
+\end_layout
+
+\begin_layout LyX-Code
+% create a box to align two pieces of text 
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+parbox{3
+\backslash
+spacebox}{% three times larger box 
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+textsc{#1}} % small caps entry name 
+\end_layout
+
+\begin_layout LyX-Code
+#2 
+\backslash
+par} % entry value
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+% language level 
+\backslash
+newcommand{
+\backslash
+lan}[2]{     
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+% set specific indentation for personal information     
+\backslash
+noindent
+\backslash
+hangindent=2em
+\backslash
+hangafter=0     
+\end_layout
+
+\begin_layout LyX-Code
+% create a box to align two pieces of text     
+\backslash
+parbox{
+\backslash
+spacebox}{%         
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\backslash
+textbf{#1}} % bold font entry name      
+\end_layout
+
+\begin_layout LyX-Code
+#2 
+\backslash
+par}    % entry value
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
 
 \end_layout
 
