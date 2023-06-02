@@ -1,0 +1,269 @@
+% Igli Kristo's CV in LaTeX
+
+\documentclass[12pt]{article} % article with 12pt font
+
+%% PACKAGES %%
+
+\usepackage[english]{babel} % multilingual support
+
+\usepackage[utf8]{inputenc} % utf8 encoding
+
+\usepackage{blindtext}
+
+% Set the default font
+
+\usepackage{tgpagella}
+
+% Specify the page margins + Set the page layout
+
+\usepackage{geometry}
+\geometry{ 
+	a4paper,
+	left=20mm,
+	%right=
+	%bottom=
+	top=15mm}
+
+% empty the headers, footers, pagenumbers...
+
+\pagestyle{empty}
+
+% Custom sectioning with secsty 
+
+\usepackage{sectsty}
+
+\sectionfont{                           	
+	\large % make sections smaller    
+	\fontfamily{qag}\selectfont % change font family     
+	\sectionrule{0pt}{0pt}{-5pt}{1pt} % insert a thin rule
+	}
+
+%% MACROS %%
+
+% size of the boxed used to align text
+
+\newlength{\spacebox}
+
+\settowidth{\spacebox}{123456789}
+
+% vertical space seperator between entries
+
+\newcommand{\sepspace}{\vspace*{1em}}
+
+%name
+
+\newcommand{\name}[1] {
+	
+	\Huge % font size
+	
+	\fontfamily{phv}\selectfont % font family
+	
+	% print name centered and bold
+	
+	\begin{center} \textbf{#1} \end{center}\par
+	
+	% back to normal size and font
+	
+	\normalsize\normalfont
+	
+}
+
+%slogan
+
+\newcommand{\motto}[1]{ 
+	
+	\large % font size
+	
+	\fontfamily{phv}\selectfont % font family
+	
+	% print motto centered and slanted
+	
+	\begin{center} \textsl{#1}\end{center}\par
+	
+	% back to normal size and font
+	
+	\normalsize \normalfont
+	
+}
+
+% personal information 
+
+\newcommand{\info}[2]{  
+	
+	% set specific indentation for personal information   
+	
+	\noindent\hangindent=2em\hangafter=0 
+	
+	% create a box to align two pieces of text   
+	
+	\parbox{\spacebox}{%   
+		
+		\textsl{#1}} % slanted entry name   
+	
+	#2 \par} % entry value
+
+% skills 
+
+\newcommand{\skill}[2]{ 
+	
+	% set specific indentation for personal information 
+	
+	\noindent\hangindent=2em\hangafter=0
+	
+	% create a box to align two pieces of text 
+	
+	\parbox{3\spacebox}{% three times larger box 
+		
+		\textsc{#1}} % small caps entry name 
+	
+	#2 \par} % entry value
+
+% language level 
+
+\newcommand{\lan}[2]{      
+	
+	% set specific indentation for personal information     
+	
+	\noindent\hangindent=2em\hangafter=0     
+	
+	% create a box to align two pieces of text     
+	
+	\parbox{\spacebox}{%          
+		
+		\textbf{#1}} % bold font entry name      
+	
+	#2 \par}    % entry value
+
+% education entry 
+
+\newcommand{\education}[4]{
+	
+	% name of the studies    
+	
+	\noindent  \textbf{#1}   
+	
+	% at the right the duration      
+	
+	\hfill      
+	
+	\framebox{% duration inside a frame box     
+		
+		\parbox{6em}{%     
+			
+			\centering\textbf{#2}}} \par  
+	
+	% new paragraph with the school in italics      
+	
+	\noindent \textit{#3} \par        % description with no hanging and in smaller text      \vspace*{0.5em}      
+	
+	\noindent\hangindent=2em\hangafter=0 \small #4  
+	
+	%back to normal size 
+	
+	\normalsize \par}
+
+% work experience
+
+\newcommand{\work}[4]{ 
+	
+	% name of the work    
+	
+	\noindent  \textbf{#1} 
+	
+	% at the right the duration   
+	
+	\hfill  
+	
+	\framebox{% duration inside a frame box 
+		
+		\parbox{6em}{%   
+			
+			\centering\textbf{#2}}} \par 
+	
+	% new paragraph with the school in italics   
+	
+	\noindent \textit{#3} \par 
+	
+	% description with no hanging and in smaller text   \vspace*{0.5em}
+	
+	\noindent\hangindent=2em\hangafter=0 \small #4
+	
+	%back to normal size 
+	
+	\normalsize \par}
+
+%% MAIN DOCUMENT %%
+
+\begin{document}
+	
+	% name and motto 
+	\name{Igli Kristo} 
+	
+	\vspace*{-10pt} 
+	
+	\motto{Embrace challenges, create opportunities}
+	
+	% personal information 
+	
+	\sepspace 
+	\info{Github}{\texttt{github.com/Igluminati}}
+	\info{PersonalWebsite}{\texttt{igluminati.github.io}}
+	\info{Email}{\texttt{IgliKristo@protonmail.com}} 	
+	\info{Phone}{+44 123 456 789} 
+	\info{Address}{Redacted Road 123, City 17, Country}
+	
+	% work experience 
+	
+	\section*{Work Experience}
+	
+	\work{Lecturer}{2015-{}-2020}{The XXX University}
+	
+	{\blindtext}
+	
+	\sepspace
+	
+	\work{Data Analyist}{2010-{}-2015}{An important tech company}{This is a detailed description of the this work:
+		
+		\begin{itemize}      
+			
+			\item One thing I did.     
+			
+			\item Another thing I did.     
+			
+			\item I didn't do much more, sorry. 
+			
+	\end{itemize}}
+	
+	% education 
+	
+	\section*{Education}
+	
+	\education{Bachelor's Degree in Computer Science}{2020-2024}{Royal Holloway, University of London}{}
+	
+	% technical skills 
+	
+	\section*{Technical skills}
+	
+	
+	
+	\skill{Programming languages}{\textsc{Java},
+	\LaTeX, \textsc{Python}, \textsc{PHP}, \textsc{HTML}, 
+	\textsc{CSS} \textsc{JavaScript}} 
+	\skill{Other}{\textsl{Markdown, Git, Vim, Manjaro, Ubuntu, MariaDB/MySQL}}
+	
+	
+	
+	% languages 
+	
+	\section*{Languages}
+	
+	\lan{English}{Native} 
+	
+	\lan{Albanian}{Fluent} 
+	
+	\lan{German}{Beginner}
+	
+\end{document}
+
+
+
