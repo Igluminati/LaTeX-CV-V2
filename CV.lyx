@@ -650,7 +650,63 @@ par}
 \end_deeper
 \end_deeper
 \begin_layout LyX-Code
+%% MAIN DOCUMENT %%
+\end_layout
 
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+% name and motto 
+\backslash
+name{Igli Kristo} 
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+vspace*{-10pt} 
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+motto{Embrace challenges, create opportunities}
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+% personal information 
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+sepspace 
+\begin_inset Newline newline
+\end_inset
+
+
+\backslash
+info{Email}{
+\backslash
+texttt{IgliKristo@protonmail.com}} 
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+info{Phone}{+44 123 456 789} 
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+info{Address}{Redacted Road 123, City 17, Country}
 \end_layout
 
 \end_body
