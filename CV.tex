@@ -10,6 +10,8 @@
 
 \usepackage{blindtext}
 
+\usepackage[colorlinks=true]{hyperref} % hyperlink support
+
 % Set the default font
 
 \usepackage{tgpagella}
@@ -206,8 +208,8 @@
 	% personal information 
 	
 	\sepspace 
-	\info{Github}{\texttt{github.com/Igluminati}}
-	\info{PersonalWebsite}{\texttt{igluminati.github.io}}
+	\info{Github:}{\href{https://github.com/Igluminati}{github.com/Igluminati}}
+	\info{PersonalWebsite:}{\href{https://igluminati.github.io}{igluminati.github.io}}
 	\info{Email}{\texttt{IgliKristo@protonmail.com}} 	
 	\info{Phone}{+44 123 456 789} 
 	\info{Address}{Redacted Road 123, City 17, Country}
@@ -216,29 +218,50 @@
 	
 	\section*{Work Experience}
 	
-	\work{Lecturer}{2015-{}-2020}{The XXX University}
-	
-	{\blindtext}
-	
 	\sepspace
 	
-	\work{Data Analyist}{2010-{}-2015}{An important tech company}{This is a detailed description of the this work:
-		
+	\work{Linux Server Admin and Software Developer}{2020-{}-2021}
+	\sepspace
+	{Kryten Tech}
+	{
 		\begin{itemize}      
+			\item Managed multiple company websites using VSCodium's SSH add-on, ensuring smooth operation and consistent updates.    
+			\item Utilized MariaDB and PHP to effectively display data from an SQL database on the company websites, enhancing user experience.    
+			\item Developed a Linux Security Tool to monitor files and track changes, maintaining data integrity and security.	
+			\item Contributed to the development and maintenance of company websites, including \href{https://github.com/Igluminati/basednet.org}{basednet.org}.
+		\end{itemize}
+	}
+	
+	\work{Code Club Teacher}{2019-{}-2020}
+	\sepspace
+	{Ashmole Academy, Cecil Road, Southgate, London, N14 5RJ}
+	{
+		\begin{itemize}
+			\item Revived the schools Code Club while studying at the Sixth Form Centre.
+			\item Facilitated and supervised the school code club, providing guidance and support to children in years 7 and 8.
+			\item Developed engaging PowerPoint presentations and delivered interactive lessons on Python programming, fostering an enjoyable learning environment.
+		\end{itemize}
+	}
 			
-			\item One thing I did.     
-			
-			\item Another thing I did.     
-			
-			\item I didn't do much more, sorry. 
-			
-	\end{itemize}}
 	
 	% education 
 	
 	\section*{Education}
 	
-	\education{Bachelor's Degree in Computer Science}{2020-2024}{Royal Holloway, University of London}{}
+	\education{Bachelor's Degree in Computer Science}{2020-2024}
+	\sepspace{Royal Holloway, University of London}
+	{
+		\sepspace
+		Relevant Coursework:
+		
+		\begin{itemize}
+			\item\textbf{Software Engineering:} Developed a solid foundation in engineering principles, including the application of agile methodologies, Test Driven Development (TDD), Version Control, Documentation, and Design Patterns.
+			\textbf{Grade: 1st Class}
+			\item\textbf{Team Project:} Took on the role of Scrum Master in a team project focused on developing a restaurant management system. Successfully utilized Trello as a task management tool to assign and track project tasks, ensuring efficient project progress and timely completion.
+			\href{https://www.youtube.com/watch?v=PpJfEVGBtPg}{Demo}
+			\textbf{Grade: 1st Class}
+		\end{itemize}
+	}
 	
 	% technical skills 
 	
