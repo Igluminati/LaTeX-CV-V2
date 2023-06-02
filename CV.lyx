@@ -389,5 +389,61 @@ normalfont
 }
 \end_layout
 
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+% personal information 
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+newcommand{
+\backslash
+info}[2]{ 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+% set specific indentation for personal information   
+\backslash
+noindent
+\backslash
+hangindent=2em
+\backslash
+hangafter=0 
+\end_layout
+
+\begin_layout LyX-Code
+% create a box to align two pieces of text   
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+parbox{
+\backslash
+spacebox}{%   
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+textsl{#1}} % slanted entry name   
+\end_layout
+
+\begin_layout LyX-Code
+#2 
+\backslash
+par} % entry value
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\end_layout
+
 \end_body
 \end_document
