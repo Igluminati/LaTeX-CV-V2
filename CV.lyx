@@ -531,6 +531,122 @@ textbf{#1}} % bold font entry name
 par}    % entry value
 \end_layout
 
+\begin_layout LyX-Code
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout LyX-Code
+% education entry 
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+newcommand{
+\backslash
+education}[4]{
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+% name of the studies   
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\backslash
+noindent  
+\backslash
+textbf{#1}   
+\end_layout
+
+\begin_layout LyX-Code
+% at the right the duration     
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\backslash
+hfill      
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+framebox{% duration inside a frame box     
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+parbox{6em}{%     
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+centering
+\backslash
+textbf{#2}}} 
+\backslash
+par  
+\end_layout
+
+\begin_layout LyX-Code
+% new paragraph with the school in italics      
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+noindent 
+\backslash
+textit{#3} 
+\backslash
+par      
+\begin_inset Newline newline
+\end_inset
+
+% description with no hanging and in smaller text      
+\backslash
+vspace*{0.5em}      
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+noindent
+\backslash
+hangindent=2em
+\backslash
+hangafter=0 
+\backslash
+small #4  
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+%back to normal size 
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+normalsize 
+\backslash
+par}
+\end_layout
+
 \end_deeper
 \end_deeper
 \begin_layout LyX-Code
