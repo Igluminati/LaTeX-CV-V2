@@ -5,12 +5,22 @@
 \save_transient_properties true
 \origin unavailable
 \textclass article
-\use_default_options true
+\begin_preamble
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{sectsty}
+
+
+
+
+\usepackage{babel}
+\end_preamble
+\use_default_options false
 \maintain_unincluded_children false
 \language english
 \language_package default
-\inputencoding auto
-\fontencoding global
+\inputencoding iso8859-15
+\fontencoding T1
 \font_roman "default" "default"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
@@ -29,27 +39,29 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_package amsmath 1
-\use_package amssymb 1
-\use_package cancel 1
+\use_package amssymb 0
+\use_package cancel 0
 \use_package esint 1
-\use_package mathdots 1
-\use_package mathtools 1
-\use_package mhchem 1
-\use_package stackrel 1
-\use_package stmaryrd 1
-\use_package undertilde 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
 \cite_engine basic
 \cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
 \justification true
-\use_refstyle 1
+\use_refstyle 0
 \use_minted 0
 \index Index
 \shortcut idx
@@ -86,10 +98,6 @@ documentclass[12pt]{article} % article with 12pt font
 \end_layout
 
 \begin_layout LyX-Code
-
-\end_layout
-
-\begin_layout LyX-Code
 %% PACKAGES %%
 \end_layout
 
@@ -107,6 +115,8 @@ usepackage[utf8]{inputenc} % utf8 encoding
 
 \begin_layout LyX-Code
 
+\backslash
+usepackage{blindtext}
 \end_layout
 
 \begin_layout LyX-Code
@@ -117,10 +127,6 @@ usepackage[utf8]{inputenc} % utf8 encoding
 
 \backslash
 usepackage{tgpagella}
-\end_layout
-
-\begin_layout LyX-Code
-
 \end_layout
 
 \begin_layout LyX-Code
@@ -136,7 +142,7 @@ usepackage{geometry}
 \begin_layout LyX-Code
 
 \backslash
-geometry{
+geometry{ 
 \end_layout
 
 \begin_deeper
@@ -176,10 +182,6 @@ pagestyle{empty}
 \end_layout
 
 \begin_layout LyX-Code
-
-\end_layout
-
-\begin_layout LyX-Code
 % Custom sectioning with secsty 
 \end_layout
 
@@ -192,7 +194,7 @@ usepackage{sectsty}
 \begin_layout LyX-Code
 
 \backslash
-sectionfont{%                           
+sectionfont{%                            
 \end_layout
 
 \begin_deeper
@@ -222,10 +224,6 @@ sectionrule{0pt}{0pt}{-5pt}{1pt} % insert a thin rule
 \end_layout
 
 \begin_layout LyX-Code
-
-\end_layout
-
-\begin_layout LyX-Code
 % size of the boxed used to align text
 \end_layout
 
@@ -246,10 +244,6 @@ spacebox}{123456789}
 \end_layout
 
 \begin_layout LyX-Code
-
-\end_layout
-
-\begin_layout LyX-Code
 % vertical space seperator between entries
 \end_layout
 
@@ -261,10 +255,6 @@ newcommand{
 sepspace}{
 \backslash
 vspace*{1em}}
-\end_layout
-
-\begin_layout LyX-Code
-
 \end_layout
 
 \begin_layout LyX-Code
@@ -326,10 +316,6 @@ normalfont
 \end_layout
 
 \begin_layout LyX-Code
-
-\end_layout
-
-\begin_layout LyX-Code
 %slogan
 \end_layout
 
@@ -338,7 +324,7 @@ normalfont
 \backslash
 newcommand{
 \backslash
-motto}[1]{
+motto}[1]{ 
 \end_layout
 
 \begin_deeper
@@ -390,10 +376,6 @@ normalfont
 \end_layout
 
 \begin_layout LyX-Code
-
-\end_layout
-
-\begin_layout LyX-Code
 % personal information 
 \end_layout
 
@@ -402,7 +384,7 @@ normalfont
 \backslash
 newcommand{
 \backslash
-info}[2]{ 
+info}[2]{  
 \end_layout
 
 \begin_deeper
@@ -488,15 +470,11 @@ par} % entry value
 \end_layout
 
 \begin_layout LyX-Code
-
-\end_layout
-
-\begin_layout LyX-Code
 % language level 
 \backslash
 newcommand{
 \backslash
-lan}[2]{     
+lan}[2]{      
 \end_layout
 
 \begin_deeper
@@ -515,7 +493,7 @@ hangafter=0
 \backslash
 parbox{
 \backslash
-spacebox}{%         
+spacebox}{%          
 \end_layout
 
 \begin_deeper
@@ -529,10 +507,6 @@ textbf{#1}} % bold font entry name
 #2 
 \backslash
 par}    % entry value
-\end_layout
-
-\begin_layout LyX-Code
-
 \end_layout
 
 \end_deeper
@@ -550,11 +524,7 @@ education}[4]{
 \end_layout
 
 \begin_layout LyX-Code
-
-\end_layout
-
-\begin_layout LyX-Code
-% name of the studies   
+% name of the studies    
 \end_layout
 
 \begin_deeper
@@ -567,7 +537,7 @@ textbf{#1}
 \end_layout
 
 \begin_layout LyX-Code
-% at the right the duration     
+% at the right the duration      
 \end_layout
 
 \begin_deeper
@@ -610,11 +580,11 @@ noindent
 \backslash
 textit{#3} 
 \backslash
-par      
+par       
 \begin_inset Newline newline
 \end_inset
 
-% description with no hanging and in smaller text      
+ % description with no hanging and in smaller text      
 \backslash
 vspace*{0.5em}      
 \end_layout
@@ -632,10 +602,6 @@ small #4
 \end_layout
 
 \begin_layout LyX-Code
-
-\end_layout
-
-\begin_layout LyX-Code
 %back to normal size 
 \end_layout
 
@@ -650,11 +616,111 @@ par}
 \end_deeper
 \end_deeper
 \begin_layout LyX-Code
-%% MAIN DOCUMENT %%
+% work experience
 \end_layout
 
 \begin_layout LyX-Code
 
+\backslash
+newcommand{
+\backslash
+work}[4]{ 
+\end_layout
+
+\begin_layout LyX-Code
+% name of the work    
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\backslash
+noindent  
+\backslash
+textbf{#1} 
+\end_layout
+
+\begin_layout LyX-Code
+% at the right the duration   
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+hfill  
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\backslash
+framebox{% duration inside a frame box 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\backslash
+parbox{6em}{%   
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+centering
+\backslash
+textbf{#2}}} 
+\backslash
+par 
+\end_layout
+
+\begin_layout LyX-Code
+% new paragraph with the school in italics   
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+noindent 
+\backslash
+textit{#3} 
+\backslash
+par 
+\end_layout
+
+\begin_layout LyX-Code
+% description with no hanging and in smaller text   
+\backslash
+vspace*{0.5em}
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+noindent
+\backslash
+hangindent=2em
+\backslash
+hangafter=0 
+\backslash
+small #4
+\end_layout
+
+\begin_layout LyX-Code
+ %back to normal size 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\backslash
+normalsize 
+\backslash
+par}
+\end_layout
+
+\begin_layout LyX-Code
+%% MAIN DOCUMENT %%
 \end_layout
 
 \begin_layout LyX-Code
@@ -676,10 +742,6 @@ motto{Embrace challenges, create opportunities}
 \end_layout
 
 \begin_layout LyX-Code
-
-\end_layout
-
-\begin_layout LyX-Code
 % personal information 
 \end_layout
 
@@ -687,14 +749,30 @@ motto{Embrace challenges, create opportunities}
 
 \backslash
 sepspace 
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
+\begin_layout LyX-Code
+
+\backslash
+info{Github}{
+\backslash
+text{github.com/Igluminati}}
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+info{Personal Website}{
+\backslash
+text{igluminati.github.io}}
+\end_layout
+
+\begin_layout LyX-Code
 
 \backslash
 info{Email}{
 \backslash
-texttt{IgliKristo@protonmail.com}} 
+text{IgliKristo@protonmail.com}} 
 \end_layout
 
 \begin_layout LyX-Code
@@ -707,6 +785,203 @@ info{Phone}{+44 123 456 789}
 
 \backslash
 info{Address}{Redacted Road 123, City 17, Country}
+\end_layout
+
+\begin_layout LyX-Code
+% work experience 
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+section*{Work Experience}
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+work{Lecturer}{2015-
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+-2020}{The XXX University}
+\end_layout
+
+\begin_layout LyX-Code
+{
+\backslash
+blindtext}
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+sepspace
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+work{Data Analyist}{2010-
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+-2015}{An important tech company}{This is a detailed description of the
+ this work:
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+begin{itemize}      
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\backslash
+item One thing I did.
+     
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+item Another thing I did.
+     
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+item I didn't do much more, sorry.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\backslash
+end{itemize}}
+\end_layout
+
+\begin_layout LyX-Code
+% education 
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+section*{Education}
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+education{Bachelor's Degree in Computer Science}{2020-2024}{Royal Holloway,
+ University of London}{}
+\end_layout
+
+\begin_layout LyX-Code
+% technical skills 
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+section*{Technical skills}
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+skill{Programming languages}{
+\backslash
+textsc{Java},
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+LaTeX, 
+\backslash
+textsc{Python}, 
+\backslash
+textsc{PHP}, 
+\backslash
+textsc{HTML & CSS}, 
+\backslash
+textsc{JavaScript}} 
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+skill{Other}{
+\backslash
+textsl{Markdown, Git, Vim, Manjaro, Ubuntu, MariaDB/MySQL}}
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+% languages 
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+section*{Languages}
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+lan{English}{Native} 
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+lan{Albanian}{Fluent} 
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+lan{German}{Beginner}
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+
 \end_layout
 
 \end_body
