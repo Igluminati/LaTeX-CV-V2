@@ -330,7 +330,63 @@ normalfont
 \end_layout
 
 \begin_layout LyX-Code
+%slogan
+\end_layout
 
+\begin_layout LyX-Code
+
+\backslash
+newcommand{
+\backslash
+motto}[1]{
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\backslash
+large % font size
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+fontfamily{phv}
+\backslash
+selectfont % font family
+\end_layout
+
+\begin_layout LyX-Code
+% print motto centered and slanted
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+begin{center} 
+\backslash
+textsl{#1}
+\backslash
+end{center}
+\backslash
+par
+\end_layout
+
+\begin_layout LyX-Code
+% back to normal size and font
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+normalsize 
+\backslash
+normalfont
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+}
 \end_layout
 
 \end_body
